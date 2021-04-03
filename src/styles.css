@@ -32,18 +32,39 @@ float:right;
 
 h1, h2, h3, h4, h5{
     font-family: 'Lexend', sans-serif;
+    color:#003475;
 }
 
 h2{
  font-size: 2em;
  color:#003475;
 }
+
+h3{
+  font-size: 4em;
+  color:#003475;
+ }
+
+
+
+
+
 p{
   font-size: 1.2rem;
 }
 .blurb{
   width:70%;
-  
+}
+
+
+#blurb2{
+  font-size: 2.5rem;
+  font-weight: 500;
+  padding-bottom:5rem;
+}
+
+a #blurb2{
+  color:#003475;
 }
 
  /* The side navigation menu */
@@ -67,7 +88,7 @@ p{
 
 /* Active/current link */
 .sidebar a.active {
-  background-color: #ffa12e;
+  background-color: #ecc798;
   color: black;
   font-weight: 500;
 }
@@ -87,23 +108,35 @@ div.content {
 
 .footer {
   position: fixed;
-  left: 0;
   bottom: 0;
+  left:0;
   width: 100%;
+  height: 100px;
   background-color:#ecc798;
   text-align: left;
   padding-top:1rem;
   padding-left:10em;
-  
   color: #003475;
   outline: none;
+  }
   
+
+.footerblurb{
+  width:60%;
 }
 
-a .footer{
+
+
+
+#icons{
+padding-left:1.5rem;
+width:30%;
+}
+
+a #icons{
   color:black;
+  }
 
-}
 
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
@@ -116,11 +149,32 @@ a .footer{
   .sidebar a {float: left;}
   div.content {margin-left: 0;}
 }
+/*--footer--*/
+footer{
+display: flex;
+box-sizing: inherit;
+font-size: 0.6em;
+margin-left: auto;
+margin-right: 0rem;
+height: 30px;
+margin-top:4rem;
+}
+       
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
 @media screen and (max-width: 400px) {
   .sidebar a {
     text-align: center;
     float: none;
+  }
+
+  .footer {
+    display: flex;
+    box-sizing: inherit;
+    font-size: 0.6em;
+    margin-left: auto;
+    margin-right: 0rem;
+    height: 50px;
+    margin-top:4rem;
   }
 } 
