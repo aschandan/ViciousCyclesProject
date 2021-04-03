@@ -1,0 +1,126 @@
+
+/*--------------------------end of fonts----------------------*/
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+img{
+  max-width: 60%;
+  padding-top:2rem;
+  height: auto;
+}
+
+img.pres{
+float:right;
+ width: 400;
+ height: 200;
+ padding-right:2em;
+ padding-left:2em;
+}
+
+h1, h2, h3, h4, h5{
+    font-family: 'Lexend', sans-serif;
+}
+
+h2{
+ font-size: 2em;
+ color:#003475;
+}
+p{
+  font-size: 1.2rem;
+}
+.blurb{
+  width:70%;
+  
+}
+
+ /* The side navigation menu */
+ .sidebar {
+  margin: 0;
+  padding: 0;
+  width: 130px;
+  background-color: #e7e7e7;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #ffa12e;
+  color: black;
+  font-weight: 500;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #ffcf94;
+  color: black;
+}
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 12em;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:#ecc798;
+  text-align: left;
+  padding-top:1rem;
+  padding-left:10em;
+  
+  color: #003475;
+  outline: none;
+  
+}
+
+a .footer{
+  color:black;
+
+}
+
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+} 
