@@ -7,9 +7,9 @@
 
 body {
     background-color: #f4f4f4;
-    width: 100%;
+ 
     height: 100%;
-    margin: 0px;
+    margin: 10%; /* page margins of no less than 300px (or 10%). - If I went to 10%, it would diminish the quality of the site. I am willing to fix this though. */ 
     padding: 0px;
     overflow-x: hidden;
     display: flex;
@@ -18,16 +18,19 @@ body {
 
 img{
   max-width: 60%;
-  padding-top:2rem;
+  padding-top:0rem;
   height: auto;
+  margin:-5%;
+  padding-left: 5rem;
 }
 
 img.pres{
 float:right;
  width: 400;
  height: 200;
- padding-right:2em;
- padding-left:2em;
+ padding-right:0em;
+ padding-left:10em;
+ padding-bottom:4em;
 }
 
 h1, h2, h3, h4, h5{
@@ -46,30 +49,28 @@ h3{
  }
 
 
-
-
-
 p{
   font-size: 1.2rem;
 }
 .blurb{
-  width:70%;
+  width:80%;
 }
 
 
 #blurb2{
   font-size: 2.5rem;
   font-weight: 500;
-  padding-bottom:5rem;
+  padding-bottom:0rem;
 }
 
 a #blurb2{
   color:#003475;
 }
 
+
  /* The side navigation menu */
  .sidebar {
-  margin: 0;
+  margin: -10% !important;
   padding: 0;
   width: 130px;
   background-color: #e7e7e7;
@@ -101,7 +102,7 @@ a #blurb2{
 
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.content {
-  margin-left: 12em;
+  margin-left: 5em;
   padding: 1px 16px;
   height: 1000px;
 }
@@ -111,19 +112,16 @@ div.content {
   bottom: 0;
   left:0;
   width: 100%;
-  height: 100px;
+  height: 90px;
   background-color:#ecc798;
   text-align: left;
-  padding-top:1rem;
-  padding-left:10em;
+  padding-top:.2rem;
   color: #003475;
   outline: none;
+  padding-left:10em;
+  font-size: 1em;
   }
   
-
-.footerblurb{
-  width:60%;
-}
 
 
 
@@ -131,34 +129,85 @@ div.content {
 #icons{
 padding-left:1.5rem;
 width:30%;
+color:#003475;
 }
 
-a #icons{
-  color:black;
-  }
+
 
 
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
-    width: 100%;
+    width: auto;
     height: auto;
     position: relative;
+    padding-left:-2rem;
   }
   .sidebar a {float: left;}
-  div.content {margin-left: 0;}
+  div.content {margin-left: 0;
+  padding-left:1rem;}
+
+.footerblurb {
+  padding-left:2em;
+  padding-bottom:1em;
+  font-size: 1.3em;
+  width:100%;
+  
 }
+body {
+  background-color: #f4f4f4;
+
+  height: 100%;
+  margin: 5%;
+  padding: 0px;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+h2{
+  padding-top:2rem;
+}
+img{
+  max-width: 60%;
+  padding-top:1rem;
+  margin-left: -5rem;
+  height: auto;
+}
+
+#blurb2{
+  padding-bottom:4rem;
+}
+
+img.pres{
+float:right;
+ width: 400;
+ height: 200;
+ padding-right:0em;
+ padding-top: 3em;
+ padding-left:8em;
+ padding-bottom: 4em;
+}
+
+#icons{
+  width:100%;
+  padding-left: 2rem;
+  color:#003475;
+  }
+  
 /*--footer--*/
 footer{
 display: flex;
 box-sizing: inherit;
-font-size: 0.6em;
-margin-left: auto;
+font-size: 0.1em;
+margin-left: -10em;
 margin-right: 0rem;
 height: 30px;
 margin-top:4rem;
 }
+}
+
        
 
 /* On screens that are less than 400px, display the bar vertically, instead of horizontally */
@@ -168,13 +217,5 @@ margin-top:4rem;
     float: none;
   }
 
-  .footer {
-    display: flex;
-    box-sizing: inherit;
-    font-size: 0.6em;
-    margin-left: auto;
-    margin-right: 0rem;
-    height: 50px;
-    margin-top:4rem;
-  }
+ 
 } 
