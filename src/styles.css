@@ -26,8 +26,8 @@ img{
 
 img.pres{
 float:right;
- width: 400;
- height: 200;
+ width: 400px;
+ height: 200px;
  padding-right:0em;
  padding-left:10em;
  padding-bottom:4em;
@@ -41,11 +41,13 @@ h1, h2, h3, h4, h5{
 h2{
  font-size: 2em;
  color:#003475;
+ width:50%;
 }
 
 h3{
   font-size: 4em;
   color:#003475;
+
  }
 
 
@@ -60,7 +62,10 @@ p{
 #blurb2{
   font-size: 2rem;
   font-weight: 500;
-  padding-bottom:0rem;
+  padding:1rem;
+  padding-bottom: 1rem;
+  text-decoration: underline;
+  background-color: #c0d8f5;
 }
 
 a #blurb2{
@@ -216,9 +221,9 @@ input[type=submit]:hover {
 
 .formcontainer {
     border-radius: 0px;
-    background-color: none;
+    background-color: transparent;
     display: flex;
-    margin-left: none;
+    margin-left: 0px;
     padding-top: 0rem;
     margin-right: auto;
     display: inline;
@@ -236,7 +241,7 @@ li{
   font-style: italic;
 }
 
-#bottom{
+.bottom{
   padding-bottom: 1rem;
 }
 @media screen and (max-width: 1280px) {
@@ -258,7 +263,7 @@ li{
   /* Style the container */
   .formcontainer {
       border-radius: 0px;
-      background-color: none;
+      background-color: transparent;
       display: flex;
       padding-right: 0px;
   }
@@ -270,7 +275,9 @@ li{
     width: auto;
     height: auto;
     position: relative;
-    padding-left:-2rem;
+    padding-left:3rem;
+    padding-top:1rem;
+
   }
   .sidebar a {float: left;}
   div.content {margin-left: 0;
@@ -310,8 +317,8 @@ img{
 
 img.pres{
 float:right;
- width: 400;
- height: 200;
+ width: 400px;
+ height: 200px;
  padding-right:0em;
  padding-top: 3em;
  padding-left:8em;
@@ -384,7 +391,7 @@ input[type=submit] {
 
 .formcontainer {
   border-radius: 0px;
-  background-color: none;
+  background-color: transparent;
   display: flex;
   padding-right: 0px;
 }

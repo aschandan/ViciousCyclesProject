@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html lang="en">
    <head>
       <meta name="generator" content="HTML Tidy for HTML5 version 5.3.7">
@@ -25,12 +25,13 @@
          </aside>
       </nav>
       <div class="content">
-         <header>
-            <h1>
-               Need a hand?
-            </h1>
-         </header>
          <article>
+            <header>
+               <h1>
+                  Need a hand?
+               </h1>
+            </header>
+
             <p>
                Feel free to contact via the form / <a href="placeholder%20email">email!</a> Other methods include our phone: (919) 123-4567 or fax:
                (917) 123-8901, or social media such as:
@@ -47,7 +48,6 @@
                </li>
             </ul>
          </article>
-         <section>
             <div class="form-and-links">
                <!--form section-->
                <div class="formcontainer">
@@ -65,6 +65,7 @@
                      <div class="row">
                         <div class="col-75">
                            <legend>Where are you located?</legend> <select name="questions">
+                              
                               <option value="innc">
                                  Within Fuquay Varina
                               </option>
@@ -79,22 +80,24 @@
                      </div>
                      <div class="row">
                         <div class="col-75">
-                           <div id="bottom">
+                           <div class="bottom">
                               <p>
                                  Are you located within the US?
-                              </p><input type="radio" id="no" name="yeslabel" value="yes" checked> <label for="yes">Yes</label> <input type="radio"
-                              id="no" name="nolabel" value="no"> <label for="no">No</label>
+                              </p>
+                              <input type="radio" id="yes" name="yeslabel" value="yes" checked> <label for="yes">Yes</label> 
+                              <input type="radio" id="no" name="nolabel" value="no"> <label for="no">No</label>
                            </div>
                         </div>
                      </div>
                      <div class="row">
                         <div class="col-75">
-                           <div id="bottom">
+                           <div class="bottom">
                               <p>
                                  If possible, we'd like to know of the reason you are contacting us. (Select multiple if needed.)
-                              </p><input type="checkbox" name="inquiry" checked> <label for="general">General Inquiry</label> <input type="checkbox"
-                              name="problem"> <label for="problems">Having problems</label> <input type="checkbox" name="Wanting a refund">
-                              <label for="problems">Wanting a refund</label>
+                              </p>
+                              <input type="checkbox" name="inquiry" checked> <label>General Inquiry</label> 
+                              <input type="checkbox" id="problem"> <label>Having problems</label> <input type="checkbox" name="Wanting a refund">
+                              <label id="refund">Wanting a refund</label>
                            </div>
                         </div>
                      </div>
@@ -106,10 +109,8 @@
                      <div class="row">
                         <input type="submit" value="Send Message →">
                      </div>
-                  </form>
                </div>
             </div>
-         </section>
-      </div>
+         </form>
    </body>
 </html>
