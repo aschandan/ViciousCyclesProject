@@ -58,7 +58,7 @@ p{
 
 
 #blurb2{
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 500;
   padding-bottom:0rem;
 }
@@ -123,18 +123,144 @@ div.content {
   }
   
 
-
-
-
 #icons{
 padding-left:1.5rem;
 width:30%;
 color:#003475;
 }
 
+ /* For the form */
+ 
+/* Style inputs, select elements and textareas */
+
+input[type=text],
+select,
+textarea {
+    padding: 12px;
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    background-color: #ecc798;
+    border: 2px solid black;
+    border-radius: 1px;
+    width: 39rem;
+    font-family: inherit;
+    color: var(--mainfont);
+    font-size: 1.2rem;
+    transition: all 0.2s ease 0s;
+}
+
+input[type=text]:hover,
+select:hover,
+textarea:hover {
+    color: black;
+    border-color: black;
+    background-color: #c2a27a;
+}
+
+input[type=text]:focus,
+select:focus,
+textarea:focus {
+    color: black;
+    
+    background-color: #c2a27a;
+}
+
+textarea {
+    font-family: inherit;
+    height: 320px;
+    min-height: 200px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    resize: vertical;
+}
 
 
+/* Style the submit button */
 
+input[type=submit] {
+    background-color: transparent;
+    color: black;
+    width: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin-top: 5px;
+    margin-bottom: 3rem;
+    padding: 12px 15px 12px 25px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: inherit;
+}
+
+input[type=submit]:hover {
+    background-color: #b9976b;
+    color: black;
+
+}
+
+
+.form-and-links {
+    display: flex;
+    padding-top: 1.4rem;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 4rem;
+}
+
+
+/* Style the container */
+
+.formcontainer {
+    border-radius: 0px;
+    background-color: none;
+    display: flex;
+    margin-left: none;
+    padding-top: 0rem;
+    margin-right: auto;
+    display: inline;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+li{
+  font-style: italic;
+}
+
+
+@media screen and (max-width: 1280px) {
+  .content {
+      align-items: center;
+      margin: auto;
+  }
+  .form-and-links {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+  }
+  /*div related to flexing*/
+  .emailandmedia {
+      margin-left: 0;
+      margin-right: 0;
+      padding-bottom: 1rem;
+  }
+  /* Style the container */
+  .formcontainer {
+      border-radius: 0px;
+      background-color: none;
+      display: flex;
+      padding-right: 0px;
+  }
+}
 
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
@@ -205,7 +331,70 @@ margin-left: -10em;
 margin-right: 0rem;
 height: 30px;
 margin-top:4rem;
+
 }
+
+input[type=text],
+select,
+textarea {
+    margin-bottom: 4px;
+    box-sizing: border-box;
+    border-radius: 1px;
+    width: 20rem;
+    align-self: center;
+    font-family: inherit;
+    color: var(--mainfont);
+    font-size: 1.2rem;
+    transition: all 0.2s ease 0s;
+}
+
+textarea {
+    font-family: inherit;
+    height: 390px;
+    min-height: 250px;
+    max-width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    resize: vertical;
+}
+/* Style the submit button */
+input[type=submit] {
+    width: auto;
+    border-width: 2px;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 12px 15px 12px 25px;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    font-size: 1.3rem;
+    font-family: inherit;
+}
+
+/*this is social media and form box, change these values to mesxs with their spacing and stuff*/
+.form-and-links {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-bottom: 1rem;
+}
+}
+
+.formcontainer {
+  border-radius: 0px;
+  background-color: none;
+  display: flex;
+  padding-right: 0px;
+}
+
+/* when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25,
+  .col-75,
+  input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+  }
 }
 
        
@@ -217,5 +406,6 @@ margin-top:4rem;
     float: none;
   }
 
+  
  
 } 
