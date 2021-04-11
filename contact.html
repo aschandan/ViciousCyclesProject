@@ -20,62 +20,96 @@
       <nav>
          <aside>
             <div class="sidebar">
-               <a href="index.html">Home</a> 
-               <a href="#News">News</a> 
-               <a class="active" href="contact.html">Contact</a> 
-               <a href="#about">About</a>
+               <a href="index.html">Home</a> <a href="#News">News</a> <a class="active" href="contact.html">Contact</a> <a href="#about">About</a>
             </div>
          </aside>
       </nav>
-
-<div class="content">
-<header>
-         <h1>
-            Need a hand?
-         </h1>
-</header>
-
-<article>
-<p>Feel free to contact via the form / email, or other methods such as:
-</p>
-<ul>
-   <li><a href="https://twitter.com">Twitter</a></li>
-   <li><a href="https://www.facebook.com/">Facebook</a></li>
-   <li><a href="https://www.instagram.com/">Instagram</a></li>
-</ul>
-</article>
-
-<section>
-<div class="form-and-links">
- <!--form section-->
- <div class="formcontainer">
-   <form id="form" action="#" method="POST">
-     <div class="row">
-
-       <div class="col-75">
-         <input type="text" id="fname" name="name" placeholder="Full Name">
-       </div>
-     </div>
-     <div class="row">
-       <div class="col-75">
-         <input type="text" id="lname" name="_replyto" placeholder="Email">
-       </div>
-     </div>
-
-     <div class="row">
-
-       <div class="col-75">
-         <textarea id="subject" name="message" placeholder="Subject"></textarea>
-       </div>
-     </div>
-     <div class="row">
-       <input type="submit" value="Send Message →">
-     </div>
-   </form>
- </div>
-</div>
-</div>
-</section>
-
-</body>
+      <div class="content">
+         <header>
+            <h1>
+               Need a hand?
+            </h1>
+         </header>
+         <article>
+            <p>
+               Feel free to contact via the form / <a href="placeholder%20email">email!</a> Other methods include our phone: (919) 123-4567 or fax:
+               (917) 123-8901, or social media such as:
+            </p>
+            <ul>
+               <li>
+                  <a href="https://twitter.com">Twitter</a>
+               </li>
+               <li>
+                  <a href="https://www.facebook.com/">Facebook</a>
+               </li>
+               <li>
+                  <a href="https://www.instagram.com/">Instagram</a>
+               </li>
+            </ul>
+         </article>
+         <section>
+            <div class="form-and-links">
+               <!--form section-->
+               <div class="formcontainer">
+                  <form id="form" action="#" method="post">
+                     <div class="row">
+                        <div class="col-75">
+                           <input type="text" id="fname" name="name" placeholder="Full Name">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-75">
+                           <input type="text" id="lname" name="_replyto" placeholder="Email">
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-75">
+                           <legend>Where are you located?</legend> <select name="questions">
+                              <option value="innc">
+                                 Within Fuquay Varina
+                              </option>
+                              <option value="notinfv">
+                                 Outside of Fuquay Varina
+                              </option>
+                              <option value="outofnc">
+                                 Outside of State
+                              </option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-75">
+                           <div id="bottom">
+                              <p>
+                                 Are you located within the US?
+                              </p><input type="radio" id="no" name="yeslabel" value="yes" checked> <label for="yes">Yes</label> <input type="radio"
+                              id="no" name="nolabel" value="no"> <label for="no">No</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-75">
+                           <div id="bottom">
+                              <p>
+                                 If possible, we'd like to know of the reason you are contacting us. (Select multiple if needed.)
+                              </p><input type="checkbox" name="inquiry" checked> <label for="general">General Inquiry</label> <input type="checkbox"
+                              name="problem"> <label for="problems">Having problems</label> <input type="checkbox" name="Wanting a refund">
+                              <label for="problems">Wanting a refund</label>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col-75">
+                           <textarea id="subject" name="message" placeholder="Subject"></textarea>
+                        </div>
+                     </div>
+                     <div class="row">
+                        <input type="submit" value="Send Message →">
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </section>
+      </div>
+   </body>
 </html>

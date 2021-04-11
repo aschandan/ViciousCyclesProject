@@ -154,7 +154,7 @@ select:hover,
 textarea:hover {
     color: black;
     border-color: black;
-    background-color: #c2a27a;
+    background-color: #e4ccac;
 }
 
 input[type=text]:focus,
@@ -162,7 +162,7 @@ select:focus,
 textarea:focus {
     color: black;
     
-    background-color: #c2a27a;
+    background-color: #e4ccac;
 }
 
 textarea {
@@ -195,7 +195,7 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-    background-color: #b9976b;
+    background-color: #e4ccac;
     color: black;
 
 }
@@ -236,7 +236,9 @@ li{
   font-style: italic;
 }
 
-
+#bottom{
+  padding-bottom: 1rem;
+}
 @media screen and (max-width: 1280px) {
   .content {
       align-items: center;
