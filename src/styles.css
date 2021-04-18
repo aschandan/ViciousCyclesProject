@@ -305,6 +305,12 @@ float:right;
    padding-bottom: 4em;
   }
 
+  img#vicious{
+    padding-right:0em;
+    padding-top: 3em;
+
+    padding-bottom: 4em;
+  }
 
 
 @media screen and (max-width: 1280px) {
