@@ -123,7 +123,7 @@ div.content {
   padding-top:.2rem;
   color: #003475;
   outline: none;
-  padding-left:10em;
+  padding-left:25em;
   font-size: 1em;
   }
   
@@ -295,7 +295,15 @@ img.grid {
 
 }
 
-
+img#family{
+float:right;
+   width: 500px;
+   height: 600px;
+   padding-right:0em;
+   padding-top: 3em;
+   padding-left:8em;
+   padding-bottom: 4em;
+  }
 
 
 
@@ -339,12 +347,22 @@ img.grid {
   padding-left:1rem;}
 
 .footerblurb {
-  padding-left:2em;
+  padding-left:1em;
   padding-bottom:1em;
   font-size: 1.3em;
   width:100%;
   
 }
+
+
+figcaption {
+  margin-top: 15px;
+  padding-top: 1rem;
+  padding-bottom:0rem;
+  margin-bottom:7rem;
+  padding-left:0rem;
+}
+
 body {
   background-color: #f4f4f4;
 
@@ -360,7 +378,7 @@ h2{
   padding-top:2rem;
 }
 img{
-  max-width: 60%;
+  max-width: 80%;
   padding-top:1rem;
   margin-left: -5rem;
   height: auto;
@@ -382,7 +400,7 @@ float:right;
 
 #icons{
   width:100%;
-  padding-left: 2rem;
+  padding-left: 4rem;
   color:#003475;
   }
   
@@ -391,9 +409,11 @@ footer{
 display: flex;
 box-sizing: inherit;
 font-size: 0.1em;
-margin-left: -10em;
+
+padding-left:0em !important;
+padding-right:1em;
 margin-right: 0rem;
-height: 30px;
+height: 10px;
 margin-top:4rem;
 
 }
